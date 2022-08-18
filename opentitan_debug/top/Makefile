@@ -30,6 +30,6 @@ clean:
 	@rm -f default.svf
 	@rm -rf simv.vdb
 	@rm -rf urgReport
-	@rm -rf .restartSimSession.tcl.old .synopsys_dve_rebuild.tcl
+	@rm -rf .restartSimSession.tcl.old .synopsys_dve_rebuild.tcl .nfs*
 
 nuke:   clean

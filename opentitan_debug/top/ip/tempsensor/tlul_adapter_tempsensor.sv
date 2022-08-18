@@ -300,8 +300,8 @@ module tempsenseInst_error_inv6_head9 (
    output outb;
    output lc_out;
    
-   assign DONE = 1'b1;
-   assign DOUT = '1;
+   assign DONE = en;
+   assign DOUT = 69;
    assign lc_out = 1'b0;   
 endmodule
 
@@ -325,8 +325,8 @@ module tempsenseInst_error_inv8_head3 (
    output outb;
    output lc_out;
    
-   assign DONE = 1'b1;
-   assign DOUT = '0;
+   assign DONE = en;
+   assign DOUT = 83;
    assign lc_out = 1'b1;
 endmodule
 
@@ -350,8 +350,8 @@ module tempsenseInst_error_inv8_head5 (
    output outb;
    output lc_out;
    
-   assign DONE = 1'b1;
-   assign DOUT = '1;
+   assign DONE = en;
+   assign DOUT = 85;
    assign lc_out = 1'b0;
 endmodule
 
@@ -375,8 +375,8 @@ module tempsenseInst_error_inv8_head7 (
    output outb;
    output lc_out;
    
-   assign DONE = 1'b1;
-   assign DOUT = '0;
+   assign DONE = en;
+   assign DOUT = 87;
    assign lc_out = 1'b1;
 endmodule
 `endif
