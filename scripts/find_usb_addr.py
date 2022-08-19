@@ -14,6 +14,7 @@ from pyftdi.usbtools import UsbTools
 gpio = []
 gpio_addr = []
 FT232H_list = UsbTools.find_all([(0x403, 0x6014)])
+print("Found " + len(FT232H_list) + " devices")
 for i in range(len(FT232H_list)):
     gpio_addr.append("ftdi://ftdi:232h:" + hex(FT232H_list[i][0].bus)[2:].zfill(2) + ":"+hex(FT232H_list[i][0].address)[2:].zfill(2)+"/1")
     print("USB Address of the " + str(i) + " board to be checked is: " + gpio_addr[i])
