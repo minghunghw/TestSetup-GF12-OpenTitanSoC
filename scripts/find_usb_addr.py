@@ -3,7 +3,7 @@ Created on Fri Aug 19 2022
 
 @author: Ming-Hung Chen
 
-Checking the addresses of each bridge board
+Connect pin D0 to C0 to check the address of each bridge board
 """
 
 import time
